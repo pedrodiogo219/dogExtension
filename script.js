@@ -1,8 +1,10 @@
 var dogAPIUrl = "https://dog.ceo/api/breeds/image/random";
 
+// global variables
 var imageElement;
 var loadingElement;
 
+// triggered when the page is loaded
 document.addEventListener("DOMContentLoaded", function() {
     // bind function to button
     var btn = document.getElementById('getDogButton');
@@ -13,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
     imageElement = document.getElementById("dogImage");
     loadingElement = document.getElementById("dogBouncing");
     
+
+    // binds this function to the "load" event of the <img>
     // when the image loads, hide the animation and show the image
     imageElement.addEventListener("load", function(){
         // hides the loading animation
@@ -21,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         imageElement.classList.remove("hidden");
     });
     
-    // load the first image
+    // loads the first image
     getDog();
 });
 

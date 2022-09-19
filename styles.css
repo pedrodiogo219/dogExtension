@@ -79,7 +79,7 @@ body {
     35% {
         top: 20px;
         animation-timing-function: ease-out;
-        transform: scale(1.5, 0.5); /* make the width bigger and height smaller */
+        transform: scale(1.5, 0.5); /* make the width bigger and height smaller for squishy effect */
     }
 
     /* back to normal proportions */
